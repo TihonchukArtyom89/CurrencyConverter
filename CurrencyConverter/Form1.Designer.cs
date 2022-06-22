@@ -105,14 +105,37 @@ namespace CurrencyConverter
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
+            this.listBox1.Items.AddRange(new object[] {
+            "RUB",
+            "USD",
+            "EUR",
+            "GBP",
+            "CNY",
+            "UAH",
+            "KZT",
+            "UZS",
+            "KGS",
+            "BYN"});
             this.listBox1.Location = new System.Drawing.Point(272, 19);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(120, 95);
             this.listBox1.TabIndex = 7;
+            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // listBox2
             // 
             this.listBox2.FormattingEnabled = true;
+            this.listBox2.Items.AddRange(new object[] {
+            "RUB",
+            "USD",
+            "EUR",
+            "GBP",
+            "CNY",
+            "UAH",
+            "KZT",
+            "UZS",
+            "KGS",
+            "BYN"});
             this.listBox2.Location = new System.Drawing.Point(478, 19);
             this.listBox2.Name = "listBox2";
             this.listBox2.Size = new System.Drawing.Size(120, 95);
