@@ -29,20 +29,138 @@ namespace CurrencyConverter
         /// </summary>
         private void InitializeComponent()
         {
+            this.btn1 = new System.Windows.Forms.Button();
+            this.lbl1 = new System.Windows.Forms.Label();
+            this.lbl2 = new System.Windows.Forms.Label();
+            this.lbl3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.lbl5 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.listBox2 = new System.Windows.Forms.ListBox();
+            this.lbl6 = new System.Windows.Forms.Label();
             this.SuspendLayout();
+            // 
+            // btn1
+            // 
+            this.btn1.Location = new System.Drawing.Point(654, 19);
+            this.btn1.Name = "btn1";
+            this.btn1.Size = new System.Drawing.Size(126, 95);
+            this.btn1.TabIndex = 0;
+            this.btn1.Text = "Перевести";
+            this.btn1.UseVisualStyleBackColor = true;
+            // 
+            // lbl1
+            // 
+            this.lbl1.AutoSize = true;
+            this.lbl1.Location = new System.Drawing.Point(12, 51);
+            this.lbl1.Name = "lbl1";
+            this.lbl1.Size = new System.Drawing.Size(69, 13);
+            this.lbl1.TabIndex = 1;
+            this.lbl1.Text = "Количество:";
+            // 
+            // lbl2
+            // 
+            this.lbl2.AutoSize = true;
+            this.lbl2.Location = new System.Drawing.Point(235, 51);
+            this.lbl2.Name = "lbl2";
+            this.lbl2.Size = new System.Drawing.Size(21, 13);
+            this.lbl2.TabIndex = 2;
+            this.lbl2.Text = "Из";
+            // 
+            // lbl3
+            // 
+            this.lbl3.AutoSize = true;
+            this.lbl3.Location = new System.Drawing.Point(428, 51);
+            this.lbl3.Name = "lbl3";
+            this.lbl3.Size = new System.Drawing.Size(14, 13);
+            this.lbl3.TabIndex = 3;
+            this.lbl3.Text = "В";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(22, 187);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(59, 13);
+            this.label4.TabIndex = 4;
+            this.label4.Text = "Результат";
+            // 
+            // lbl5
+            // 
+            this.lbl5.AutoSize = true;
+            this.lbl5.Location = new System.Drawing.Point(239, 209);
+            this.lbl5.Name = "lbl5";
+            this.lbl5.Size = new System.Drawing.Size(10, 13);
+            this.lbl5.TabIndex = 5;
+            this.lbl5.Text = " ";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(99, 44);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 6;
+            // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Location = new System.Drawing.Point(272, 19);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(120, 95);
+            this.listBox1.TabIndex = 7;
+            // 
+            // listBox2
+            // 
+            this.listBox2.FormattingEnabled = true;
+            this.listBox2.Location = new System.Drawing.Point(478, 19);
+            this.listBox2.Name = "listBox2";
+            this.listBox2.Size = new System.Drawing.Size(120, 95);
+            this.listBox2.TabIndex = 8;
+            // 
+            // lbl6
+            // 
+            this.lbl6.AutoSize = true;
+            this.lbl6.Location = new System.Drawing.Point(432, 209);
+            this.lbl6.Name = "lbl6";
+            this.lbl6.Size = new System.Drawing.Size(10, 13);
+            this.lbl6.TabIndex = 9;
+            this.lbl6.Text = " ";
             // 
             // main_win_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 293);
+            this.Controls.Add(this.lbl6);
+            this.Controls.Add(this.listBox2);
+            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.lbl5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.lbl3);
+            this.Controls.Add(this.lbl2);
+            this.Controls.Add(this.lbl1);
+            this.Controls.Add(this.btn1);
             this.Name = "main_win_form";
             this.Text = "Конвертер валют";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Button btn1;
+        private System.Windows.Forms.Label lbl1;
+        private System.Windows.Forms.Label lbl2;
+        private System.Windows.Forms.Label lbl3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lbl5;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox listBox2;
+        private System.Windows.Forms.Label lbl6;
     }
 }
 
