@@ -34,11 +34,10 @@ namespace CurrencyConverter
             this.lbl2 = new System.Windows.Forms.Label();
             this.lbl3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.lbl5 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.listBox2 = new System.Windows.Forms.ListBox();
-            this.lbl6 = new System.Windows.Forms.Label();
+            this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.SuspendLayout();
             // 
             // btn1
@@ -49,6 +48,7 @@ namespace CurrencyConverter
             this.btn1.TabIndex = 0;
             this.btn1.Text = "Перевести";
             this.btn1.UseVisualStyleBackColor = true;
+            this.btn1.Click += new System.EventHandler(this.btn1_Click);
             // 
             // lbl1
             // 
@@ -85,15 +85,6 @@ namespace CurrencyConverter
             this.label4.Size = new System.Drawing.Size(59, 13);
             this.label4.TabIndex = 4;
             this.label4.Text = "Результат";
-            // 
-            // lbl5
-            // 
-            this.lbl5.AutoSize = true;
-            this.lbl5.Location = new System.Drawing.Point(239, 209);
-            this.lbl5.Name = "lbl5";
-            this.lbl5.Size = new System.Drawing.Size(10, 13);
-            this.lbl5.TabIndex = 5;
-            this.lbl5.Text = " ";
             // 
             // textBox1
             // 
@@ -141,25 +132,24 @@ namespace CurrencyConverter
             this.listBox2.Size = new System.Drawing.Size(120, 95);
             this.listBox2.TabIndex = 8;
             // 
-            // lbl6
+            // webBrowser1
             // 
-            this.lbl6.AutoSize = true;
-            this.lbl6.Location = new System.Drawing.Point(432, 209);
-            this.lbl6.Name = "lbl6";
-            this.lbl6.Size = new System.Drawing.Size(10, 13);
-            this.lbl6.TabIndex = 9;
-            this.lbl6.Text = " ";
+            this.webBrowser1.Location = new System.Drawing.Point(253, 187);
+            this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
+            this.webBrowser1.Name = "webBrowser1";
+            this.webBrowser1.Size = new System.Drawing.Size(313, 70);
+            this.webBrowser1.TabIndex = 9;
+            this.webBrowser1.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.webBrowser1_DocumentCompleted);
             // 
             // main_win_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 293);
-            this.Controls.Add(this.lbl6);
+            this.Controls.Add(this.webBrowser1);
             this.Controls.Add(this.listBox2);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.lbl5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.lbl3);
             this.Controls.Add(this.lbl2);
@@ -179,11 +169,10 @@ namespace CurrencyConverter
         private System.Windows.Forms.Label lbl2;
         private System.Windows.Forms.Label lbl3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label lbl5;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.ListBox listBox2;
-        private System.Windows.Forms.Label lbl6;
+        private System.Windows.Forms.WebBrowser webBrowser1;
     }
 }
 

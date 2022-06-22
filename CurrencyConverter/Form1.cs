@@ -21,5 +21,29 @@ namespace CurrencyConverter
         {
 
         }
+
+        private void webBrowser1_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
+        {
+
+        }
+
+        private void btn1_Click(object sender, EventArgs e)
+        {
+            string from, to;
+            from = listBox1.SelectedItem.ToString();
+            to = listBox2.SelectedItem.ToString();
+            if(from==to)
+            {
+                MessageBox.Show("Одинаковые валюты!", "Внимание!");
+            }
+            else if(textBox1.Text==String.Empty)
+            {
+                MessageBox.Show("Введите количество денег для конвертации!", "Внимание!");
+            }
+            else
+            {
+                webBrowser1.Navigate("https://www.google.ru/search?q=" + textBox1.Text + " " + from + " %D0%B2 " + to);
+            }
+        }
     }
 }
